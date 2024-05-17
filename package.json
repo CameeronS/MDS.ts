@@ -1,0 +1,16 @@
+{
+  "name": "mds-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --minify --dts"
+  },
+  "author": "Minima Global",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
