@@ -3,19 +3,30 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vitest",
-    "test": "vitest run",
-    "build": "tsup src/index.ts --format cjs,esm --minify --dts",
+    "test": "vitest run ",
+    "build": "tsc && vite build",
     "lint": "tsc",
-    "ci": "pnpm run lint && pnpm run test && pnpm run build"
+    "ci": "bun run lint && bun run test && bun run build"
   },
   "author": "Minima Global",
   "license": "ISC",
+  "peerDependencies": {
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
     "@types/node": "^20.12.12",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "zod": "^3.23.8"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   }
 }

@@ -1,3 +1,2 @@
-export function Test() {
-  console.log("Hello World")
-}
+export * from "./types"
+export * from "./mds"
